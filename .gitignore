@@ -1,0 +1,16 @@
+/HTMLTestReport/
+*.png
+*.txt
+*.class
+.idea
+*.iml
+
+
+
+dist
+build
+
+CSVReports
+AutomatedTests\HTMLTestReport
+/KeywordDrivenTestReports/
+

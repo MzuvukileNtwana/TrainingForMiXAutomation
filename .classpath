@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="KeywordDrivenTestFramework/Testing/TestClasses/ConfigAdmin/Libraries/" kind="src" path="Source"/>
+	<classpathentry kind="src" path="Source/KeywordDrivenTestFramework/Testing/TestClasses/ConfigAdmin/Libraries"/>
+	<classpathentry kind="src" path="Unit Tests"/>
+	<classpathentry kind="lib" path="Dependencies/activation.jar"/>
+	<classpathentry kind="lib" path="Dependencies/appium-3.4.1.jar"/>
+	<classpathentry kind="lib" path="Dependencies/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="Dependencies/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="Dependencies/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="Dependencies/derbyclient.jar/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Dependencies/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="Dependencies/extentreports-2.40.2.jar"/>
+	<classpathentry kind="lib" path="Dependencies/extentreports-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="Dependencies/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="Dependencies/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="Dependencies/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="Dependencies/joda-time-2.2.jar"/>
+	<classpathentry kind="lib" path="Dependencies/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="Dependencies/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="Dependencies/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="Dependencies/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="Dependencies/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="Dependencies/junit/junit-3.8.2.jar"/>
+	<classpathentry kind="lib" path="Dependencies/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="Dependencies/mail.jar"/>
+	<classpathentry kind="lib" path="Dependencies/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="Dependencies/poi-examples-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="Dependencies/poi-excelant-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="Dependencies/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="Dependencies/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="Dependencies/poi-scratchpad-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="Dependencies/selenium-java-2.53.0.jar"/>
+	<classpathentry kind="lib" path="Dependencies/selenium-server-standalone-2.53.0.jar"/>
+	<classpathentry kind="lib" path="Dependencies/sikuli-java.jar"/>
+	<classpathentry kind="lib" path="Dependencies/sikuli-script.jar"/>
+	<classpathentry kind="lib" path="Dependencies/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="Dependencies/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="AFSTBWS152" name="TestSuites.JenkinsSuite" skipped="0" tests="1" time="0.101" timestamp="2017-02-07T10:50:48">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="home" value="." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Windows 10" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_91\jre\classes" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="C:\ANT" />
+    <property name="java.runtime.version" value="1.8.0_91-b14" />
+    <property name="dest.dir" value="build" />
+    <property name="user.name" value="RauvounW" />
+    <property name="Environment" value="Integration" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_91\jre\bin" />
+    <property name="ant.project.default-target" value="test" />
+    <property name="ant.project.name" value="KissatExecuteTest" />
+    <property name="java.version" value="1.8.0_91" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\endorsed" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="ZA" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_91\jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="D:\source\ANTBUILD.xml" />
+    <property name="os.version" value="10.0" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="25.91-b14" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="C:\ANT\lib" />
+    <property name="ant.file.type.KissatExecuteTest" value="file" />
+    <property name="ant.file.KissatExecuteTest" value="D:\source\ANTBUILD.xml" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="user.script" value="" />
+    <property name="user.home" value="C:\Users\RauvounW" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;%ANT_HOME%\bin;C:\Users\RauvounW\AppData\Local\Microsoft\WindowsApps;;." />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="Browser" value="Chrome" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -file ANTBUILD.xml -DTestPack MixTelematics_RegressionTestPack.xls -DEnvironment Integration -DBrowser Chrome -DmyTest TestSuites.JenkinsSuite" />
+    <property name="java.class.path" value="C:\ANT\lib\ant-launcher.jar;C:\ANT\lib\ant-antlr.jar;C:\ANT\lib\ant-apache-bcel.jar;C:\ANT\lib\ant-apache-bsf.jar;C:\ANT\lib\ant-apache-log4j.jar;C:\ANT\lib\ant-apache-oro.jar;C:\ANT\lib\ant-apache-regexp.jar;C:\ANT\lib\ant-apache-resolver.jar;C:\ANT\lib\ant-apache-xalan2.jar;C:\ANT\lib\ant-commons-logging.jar;C:\ANT\lib\ant-commons-net.jar;C:\ANT\lib\ant-jai.jar;C:\ANT\lib\ant-javamail.jar;C:\ANT\lib\ant-jdepend.jar;C:\ANT\lib\ant-jmf.jar;C:\ANT\lib\ant-jsch.jar;C:\ANT\lib\ant-junit.jar;C:\ANT\lib\ant-junit4.jar;C:\ANT\lib\ant-launcher.jar;C:\ANT\lib\ant-netrexx.jar;C:\ANT\lib\ant-swing.jar;C:\ANT\lib\ant-testutil.jar;C:\ANT\lib\ant.jar;C:\Program Files\Java\jdk1.8.0_91\lib\tools.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.7 compiled on April 9 2016" />
+    <property name="TestPack" value="MixTelematics_RegressionTestPack.xls" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.io.tmpdir" value="C:\Users\RauvounW\AppData\Local\Temp\" />
+    <property name="dest.dir.lib" value="build/lib" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="dest.dir.classes" value="build/classes" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_91\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\source" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="D:\source" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="C:\ANT\lib\ant.jar" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="sun.stderr.encoding" value="cp437" />
+    <property name="myTest" value="TestSuites.JenkinsSuite" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <testcase classname="TestSuites.JenkinsSuite" name="executeJenkinsSuite" time="0.071" />
+  <system-out><![CDATA[[java.runtime.name, sun.boot.library.path, java.vm.version, ant.library.dir, java.vm.vendor, java.vendor.url, path.separator, java.vm.name, file.encoding.pkg, user.script, user.country, sun.java.launcher, sun.os.patch.level, myTest, java.vm.specification.name, user.dir, java.runtime.version, java.awt.graphicsenv, java.endorsed.dirs, os.arch, java.io.tmpdir, line.separator, java.vm.specification.vendor, user.variant, os.name, ant.home, sun.jnu.encoding, java.library.path, java.specification.name, java.class.version, sun.management.compiler, os.version, user.home, user.timezone, java.awt.printerjob, java.specification.version, file.encoding, TestPack, user.name, java.class.path, java.vm.specification.version, sun.arch.data.model, java.home, sun.java.command, java.specification.vendor, user.language, awt.toolkit, java.vm.info, java.version, java.ext.dirs, sun.boot.class.path, sun.stderr.encoding, java.vendor, file.separator, Environment, java.vendor.url.bug, sun.cpu.endian, sun.io.unicode.encoding, sun.stdout.encoding, sun.desktop, Browser, sun.cpu.isalist]
+[INFO] Executing tests: Browser - Chrome, Environment - Integration, Test Pack - MixTelematics_RegressionTestPack.xls, MyTest = TestSuites.JenkinsSuite
+[INFO] Executing tests: Browser - Chrome, Environment - Integration, Test Pack - MixTelematics_RegressionTestPack.xls
+Error generating report...see message and  stack trace below: null
+No suitable driver found for jdbc:derby://localhost:1527/TestResults
+]]></system-out>
+  <system-err><![CDATA[Test data object is empty - spreadsheet not found or is empty
+]]></system-err>
+</testsuite>
