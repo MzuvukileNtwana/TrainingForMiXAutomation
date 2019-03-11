@@ -30,6 +30,7 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectDriver;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelematicsEU;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset2;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
 
 
@@ -182,6 +183,15 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
+                            case "CreateNewAsset2":
+                            {
+                         
+                                 CreateNewAsset2 MXTEL = new CreateNewAsset2 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
                             case "CheckDiagnosticWindowLoadInfo":
                             {
                                 CheckDiagnosticWindowLoadInfo checkDiagnosticWindow = new CheckDiagnosticWindowLoadInfo(testData);
