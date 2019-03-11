@@ -12457,6 +12457,10 @@ public boolean ClickListOfElementsWithExpander(String elementXpath)
         }
         
     }
+
+    public void clickElementByXpath() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
 
