@@ -30,19 +30,10 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectDriver;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelematicsEU;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
-<<<<<<< HEAD
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset;
-=======
-<<<<<<< HEAD
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset4;
-=======
-<<<<<<< HEAD
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset2;
-=======
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset1;
->>>>>>> 8b4dd07b03611c4435185717d78448dbdb14aa11
->>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
->>>>>>> d8bd29afd397c1b005f1dd58ee3ba75adbf48911
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
 
 
@@ -195,35 +186,28 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
-<<<<<<< HEAD
                             case "CreateNewAsset":
                             {
-                                //ensureNewBrowserInstance();
-                                CreateNewAsset MXTEL = new CreateNewAsset(testData);
-=======
-<<<<<<< HEAD
-                            case "CreateNewAsset4":
-                            {
-                  
-                                CreateNewAsset4 MXTEL = new CreateNewAsset4(testData);
-=======
-                            case "CreateNewAsset2":
-                            {
-                         
-                                 CreateNewAsset2 MXTEL = new CreateNewAsset2 (testData);
->>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
->>>>>>> d8bd29afd397c1b005f1dd58ee3ba75adbf48911
+                                CreateNewAsset MXTEL = new CreateNewAsset (testData);
                                 reportGenerator.addResult(MXTEL.executeTest());
                                 numberOfTest++;
                                 break;
                             }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-                            
->>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
->>>>>>> d8bd29afd397c1b005f1dd58ee3ba75adbf48911
+                            case "CreateNewAsset4":
+                            {
+                                CreateNewAsset4 MXTEL = new CreateNewAsset4 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            case "CreateNewAsset2":
+                            {
+                         
+                                 CreateNewAsset2 MXTEL = new CreateNewAsset2 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
                             case "CheckDiagnosticWindowLoadInfo":
                             {
                                 CheckDiagnosticWindowLoadInfo checkDiagnosticWindow = new CheckDiagnosticWindowLoadInfo(testData);
