@@ -30,6 +30,7 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectDriver;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelematicsEU;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset1;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
 
 
@@ -353,7 +354,13 @@ public class TestMarshall extends BaseClass
                                 break;
                             }
                             
-                           
+                            case "CreateNewAsset1":
+                            {
+                                CreateNewAsset1 createAsset = new CreateNewAsset1(testData);
+                                reportGenerator.addResult(createAsset.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
                         }       
                     }
                     catch (Exception ex)
