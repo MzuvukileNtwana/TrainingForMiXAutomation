@@ -30,6 +30,7 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectDriver;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelematicsEU;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
 
 
@@ -178,6 +179,14 @@ public class TestMarshall extends BaseClass
                             {
                                 ensureNewBrowserInstance();
                                 Login_to_MixTelematics MXTEL = new Login_to_MixTelematics(testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            case "CreateNewAsset":
+                            {
+                                //ensureNewBrowserInstance();
+                                CreateNewAsset MXTEL = new CreateNewAsset(testData);
                                 reportGenerator.addResult(MXTEL.executeTest());
                                 numberOfTest++;
                                 break;

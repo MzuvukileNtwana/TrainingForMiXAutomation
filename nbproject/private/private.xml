@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
-        <file>
-<<<<<<< HEAD
-            <url>Source/KeywordDrivenTestFramework/Testing/TestMarshall.java</url>
-            <bookmark id="1">
-                <name/>
-                <line>195</line>
-=======
-            <url>Source/KeywordDrivenTestFramework/ConfigAdmin/NavigateAndEditLocation.java</url>
-            <bookmark id="1">
-                <name/>
-                <line>112</line>
->>>>>>> a7cecfd1fdd7cb7037263635d965caf6e1d2f496
-                <key/>
-            </bookmark>
-        </file>
-    </editor-bookmarks>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/MzuvukileN/Documents/TrainingForMiXAutomation/Source/KeywordDrivenTestFramework/Monitor/FleetAdmin/Assets/CreateNewAsset.java</file>
+            <file>file:/C:/Users/MzuvukileN/Documents/TrainingForMiXAutomation/Source/KeywordDrivenTestFramework/Monitor/FleetAdmin/Assets/CheckDiagnosticWindowLoadInfo.java</file>
+        </group>
     </open-files>
 </project-private>

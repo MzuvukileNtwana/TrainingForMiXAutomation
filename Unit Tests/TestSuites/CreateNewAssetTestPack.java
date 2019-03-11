@@ -23,7 +23,7 @@ public class CreateNewAssetTestPack {
     {
         ApplicationConfig appConfig = new ApplicationConfig();
         
-        instance.currentEnvironment = Enums.Environment.INT;  
+        instance.currentEnvironment = Enums.Environment.ENT;  
     }
      
     @Test
@@ -38,7 +38,7 @@ public class CreateNewAssetTestPack {
     public void RunMixTelematicsCreateNewAssetTestPackChrome() throws FileNotFoundException
     {
         System.out.println("Mix Telematics Test Pack");   
-        instance = new TestMarshall("TestPacks\\CreateNewAssetTestPack.xlsx", Enums.BrowserType.Chrome);
+        instance = new TestMarshall("TestPacks\\GeneralTestPack.xlsx", Enums.BrowserType.Chrome);
         instance.runKeywordDrivenTests();
     }
     
