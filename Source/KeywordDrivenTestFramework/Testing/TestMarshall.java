@@ -30,7 +30,15 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectDriver;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelematicsEU;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
+<<<<<<< HEAD
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset3;
+=======
+<<<<<<< HEAD
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset2;
+=======
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset1;
+>>>>>>> 8b4dd07b03611c4435185717d78448dbdb14aa11
+>>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
 
 
@@ -183,10 +191,17 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
+<<<<<<< HEAD
                             case "CreateNewAsset3":
                             {
                                 //ensureNewBrowserInstance();
                                 CreateNewAsset3 MXTEL = new CreateNewAsset3(testData);
+=======
+                            case "CreateNewAsset2":
+                            {
+                         
+                                 CreateNewAsset2 MXTEL = new CreateNewAsset2 (testData);
+>>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
                                 reportGenerator.addResult(MXTEL.executeTest());
                                 numberOfTest++;
                                 break;
@@ -363,7 +378,13 @@ public class TestMarshall extends BaseClass
                                 break;
                             }
                             
-                           
+                            case "CreateNewAsset1":
+                            {
+                                CreateNewAsset1 createAsset = new CreateNewAsset1(testData);
+                                reportGenerator.addResult(createAsset.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
                         }       
                     }
                     catch (Exception ex)
