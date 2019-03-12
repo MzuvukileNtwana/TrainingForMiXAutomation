@@ -31,14 +31,21 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelemati
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset3;
 =======
 <<<<<<< HEAD
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset2;
 =======
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset4;
+>>>>>>> 559d63e89ac1291933b0086bdf15334ddc290218
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset2;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset1;
+<<<<<<< HEAD
 >>>>>>> 8b4dd07b03611c4435185717d78448dbdb14aa11
 >>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
+=======
+>>>>>>> 559d63e89ac1291933b0086bdf15334ddc290218
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
 
 
@@ -192,11 +199,28 @@ public class TestMarshall extends BaseClass
                                 break;
                             }
 <<<<<<< HEAD
+<<<<<<< HEAD
                             case "CreateNewAsset3":
                             {
                                 //ensureNewBrowserInstance();
                                 CreateNewAsset3 MXTEL = new CreateNewAsset3(testData);
 =======
+=======
+                            case "CreateNewAsset":
+                            {
+                                CreateNewAsset MXTEL = new CreateNewAsset (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            case "CreateNewAsset4":
+                            {
+                                CreateNewAsset4 MXTEL = new CreateNewAsset4 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+>>>>>>> 559d63e89ac1291933b0086bdf15334ddc290218
                             case "CreateNewAsset2":
                             {
                          
@@ -206,7 +230,6 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
-                            
                             case "CheckDiagnosticWindowLoadInfo":
                             {
                                 CheckDiagnosticWindowLoadInfo checkDiagnosticWindow = new CheckDiagnosticWindowLoadInfo(testData);
