@@ -32,10 +32,14 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset3;
 =======
 <<<<<<< HEAD
 =======
+=======
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAssets5;
+>>>>>>> cdf68c92f590e044b9292c750ae32999d43c7602
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset4;
 >>>>>>> 559d63e89ac1291933b0086bdf15334ddc290218
@@ -200,12 +204,22 @@ public class TestMarshall extends BaseClass
                             }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             case "CreateNewAsset3":
                             {
                                 //ensureNewBrowserInstance();
                                 CreateNewAsset3 MXTEL = new CreateNewAsset3(testData);
 =======
 =======
+=======
+                            case "CreateNewAssets5":
+                            {
+                                CreateNewAssets5 MXTEL = new CreateNewAssets5 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+>>>>>>> cdf68c92f590e044b9292c750ae32999d43c7602
                             case "CreateNewAsset":
                             {
                                 CreateNewAsset MXTEL = new CreateNewAsset (testData);
