@@ -38,10 +38,6 @@ public class CreateNewAssetTestPack {
     public void RunMixTelematicsCreateNewAssetTestPackChrome() throws FileNotFoundException
     {
         System.out.println("Mix Telematics Test Pack");   
-<<<<<<< HEAD
-        
-=======
->>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
         instance = new TestMarshall("TestPacks\\GeneralTestPack.xlsx", Enums.BrowserType.Chrome);
         instance.runKeywordDrivenTests();
     }

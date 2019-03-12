@@ -30,26 +30,12 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectDriver;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelematicsEU;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset3;
-=======
-<<<<<<< HEAD
-=======
-=======
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAssets5;
->>>>>>> cdf68c92f590e044b9292c750ae32999d43c7602
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset4;
->>>>>>> 559d63e89ac1291933b0086bdf15334ddc290218
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset2;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset1;
-<<<<<<< HEAD
->>>>>>> 8b4dd07b03611c4435185717d78448dbdb14aa11
->>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
-=======
->>>>>>> 559d63e89ac1291933b0086bdf15334ddc290218
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
 
 
@@ -202,16 +188,13 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                             case "CreateNewAsset3":
                             {
-                                //ensureNewBrowserInstance();
-                                CreateNewAsset3 MXTEL = new CreateNewAsset3(testData);
-=======
-=======
-=======
+                                CreateNewAsset3 MXTEL = new CreateNewAsset3 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
                             case "CreateNewAssets5":
                             {
                                 CreateNewAssets5 MXTEL = new CreateNewAssets5 (testData);
@@ -219,7 +202,6 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
->>>>>>> cdf68c92f590e044b9292c750ae32999d43c7602
                             case "CreateNewAsset":
                             {
                                 CreateNewAsset MXTEL = new CreateNewAsset (testData);
@@ -234,12 +216,18 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
->>>>>>> 559d63e89ac1291933b0086bdf15334ddc290218
                             case "CreateNewAsset2":
                             {
                          
                                  CreateNewAsset2 MXTEL = new CreateNewAsset2 (testData);
->>>>>>> 1351c27dc6490f13f29b1e4bd835b6edce036b1b
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            case "CreateNewAsset1":
+                            {
+                         
+                                CreateNewAsset1 MXTEL = new CreateNewAsset1 (testData);
                                 reportGenerator.addResult(MXTEL.executeTest());
                                 numberOfTest++;
                                 break;
@@ -411,14 +399,6 @@ public class TestMarshall extends BaseClass
                             {
                                 SelectDriver selectDriver = new SelectDriver(testData);
                                 reportGenerator.addResult(selectDriver.executeTest());
-                                numberOfTest++;
-                                break;
-                            }
-                            
-                            case "CreateNewAsset1":
-                            {
-                                CreateNewAsset1 createAsset = new CreateNewAsset1(testData);
-                                reportGenerator.addResult(createAsset.executeTest());
                                 numberOfTest++;
                                 break;
                             }
