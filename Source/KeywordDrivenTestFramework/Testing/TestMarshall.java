@@ -29,14 +29,14 @@ import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectBreadcrum;
 import KeywordDrivenTestFramework.Testing.TestClasses.Utilities.SelectDriver;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Login_to_MixTelematicsEU;
 import KeywordDrivenTestFramework.Testing.TestClasses.Login.Navigate;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CheckDiagnosticWindowLoadInfo;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset3;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAssets5;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset4;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset2;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.CreateNewAsset1;
-import KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets.ExportDiagnosticsInformation;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.CheckDiagnosticWindowLoadInfo;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset3;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAssets5;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset4;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset2;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset1;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.ExportDiagnosticsInformation;
 
 
 /**
