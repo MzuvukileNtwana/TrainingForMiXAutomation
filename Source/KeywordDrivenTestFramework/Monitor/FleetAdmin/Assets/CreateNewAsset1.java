@@ -45,6 +45,15 @@ public class CreateNewAsset1 extends BaseClass{
         }
         
         
+        
+          if(!CheckName()) {
+            
+            SeleniumDriverInstance.takeScreenShot(counter + " - Failed to check the name", true);
+            counter++;
+            narrator.failedMessage("Failed to check the name - "+errorMsg);
+            return new TestResult(testData, Enums.ResultStatus.FAIL, "Failed to check the name", this.getTotalExecutionTime());
+        }
+        
         if(!AddButton()) {
             
             SeleniumDriverInstance.takeScreenShot(counter + " - Failed to click on add button", true);
@@ -52,6 +61,9 @@ public class CreateNewAsset1 extends BaseClass{
             narrator.failedMessage("Failed to click on add button - "+errorMsg);
             return new TestResult(testData, Enums.ResultStatus.FAIL, "Failed to click on add button", this.getTotalExecutionTime());
         }
+        
+       
+        
         if(!AddDetails()) {
             
             SeleniumDriverInstance.takeScreenShot(counter + " - Failed to add details", true);
@@ -95,6 +107,8 @@ public class CreateNewAsset1 extends BaseClass{
             return true;
     }
      
+  
+     
      public boolean AddButton(){
          
         
@@ -107,6 +121,53 @@ public class CreateNewAsset1 extends BaseClass{
                   
             return true;
     }
+     
+     
+        public boolean CheckName(){
+            
+         if(!SeleniumDriverInstance.enterTextByXpath("//INPUT[@type='text']", "Anelisiwe")) { 
+         errorMsg = "failed to check the name";
+         
+         return false;
+           }
+          pause(5000);
+          
+           
+         if(!SeleniumDriverInstance.clickElementByXpath("(//i[@class= 'icon-search'])[1]")){
+             return false;
+         }
+           pause(5000);
+           
+           String Name = SeleniumDriverInstance.retrieveTextByXpath("//span[@class= 'badge badge-grey ng-binding']");
+           
+           if(!Name.contains("0")){
+           
+           if(!SeleniumDriverInstance.clickElementByXpath("//a[@class= 'row-action']")){
+             return false;
+         }
+           pause(5000);
+           
+             if(!SeleniumDriverInstance.clickElementByXpath("//a[@event= 'Remove']")){
+             return false;
+         }
+           pause(5000);
+           
+                 if(!SeleniumDriverInstance.clickElementByXpath("(//button[@type= 'submit'])[2]")){
+             return false;
+         }
+           pause(5000);
+           
+           }
+         SeleniumDriverInstance.takeScreenShot(counter+ "sucessfully cliked on add button", false);
+            counter++;
+                  
+            return true;
+           
+        }
+        
+        
+     
+     
      
       public boolean AddDetails(){
          
@@ -143,14 +204,76 @@ public class CreateNewAsset1 extends BaseClass{
             return false;
             
         }
+        
+        
+          if(!SeleniumDriverInstance.EnterTextByXpath("//input[@name= \"vinNumber\"]", "123451")){
+           errorMsg = "failed to add the vehicle identication number";
+           return false;
+        }
+          pause(5000);
+          
+          
+           if(!SeleniumDriverInstance.EnterTextByXpath("//input[@name= \"make\"]", "Boat")){
+           errorMsg = "failed to add make";
+           return false;
+        }
+           
+             if(!SeleniumDriverInstance.EnterTextByXpath("//input[@name= \"year\"]", "2019")){
+           errorMsg = "failed to add year";
+           return false;
+        }
+           
              
+                 if(!SeleniumDriverInstance.selectFromDropDownListUsingXpath("//select[@name= \"fuelType\"]", "Diesel")){
+           errorMsg = "failed to select fuel";
+           return false;
+        }
+                 
+                 
+                     if(!SeleniumDriverInstance.EnterTextByXpath("//input[@name= \"fuelTankCapacity\"]", "80")){
+           errorMsg = "failed to select fuel";
+           return false;
+        }
+                     
+         /*               if(!SeleniumDriverInstance.selectFromDropDownListUsingXpath("//input[@name= \"fmVehicleId\"]", "1")){
+           errorMsg = "failed to select fuel";
+           return false;
+        }*/
+                        
+                        
+                           if(!SeleniumDriverInstance.EnterTextByXpath("//input[@name= 'model']", "Supper Boat")){
+           errorMsg = "failed to add Supper Boat";
+           return false;
+        }
+             
+                           
+                           
+                             if(!SeleniumDriverInstance.EnterTextByXpath("//input[@name= \"engineNumber\"]", "14")){
+           errorMsg = "failed to add Supper Boat";
+           return false;
+        }
+                             
+                             
+                               if(!SeleniumDriverInstance.EnterTextByXpath("//input[@name= \"targetFuelConsumption\"]", "14")){
+           errorMsg = "failed to add Supper Boat";
+           return false;
+        }
+                               
+                               
+                               
+                                  if(!SeleniumDriverInstance.EnterTextByXpath("//textarea[@name= \"notes\"]", "notes")){
+           errorMsg = "failed to add notes";
+           return false;
+        }
+                               
         SeleniumDriverInstance.takeScreenShot(counter+ "sucessfully enter aseets details", false);
         counter++;
                   
         return true;
     }
       
-      
+   
+          
        public boolean ClickSave(){
          
         
@@ -164,7 +287,7 @@ public class CreateNewAsset1 extends BaseClass{
             return true;
     }
      
-     }
+}
      
 
 
