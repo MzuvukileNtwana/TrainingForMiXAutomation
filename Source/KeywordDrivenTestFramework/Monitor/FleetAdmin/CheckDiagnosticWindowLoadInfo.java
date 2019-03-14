@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package KeywordDrivenTestFramework.Monitor.FleetAdmin.Assets;
+package KeywordDrivenTestFramework.Monitor.FleetAdmin;
 
 import KeywordDrivenTestFramework.Core.BaseClass;
 import static KeywordDrivenTestFramework.Core.BaseClass.SeleniumDriverInstance;

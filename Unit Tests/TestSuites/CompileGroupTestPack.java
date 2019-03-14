@@ -22,7 +22,7 @@ public class CompileGroupTestPack{
     {
         ApplicationConfig appConfig = new ApplicationConfig();
         
-        instance.currentEnvironment = Enums.Environment.INT;  
+        instance.currentEnvironment = Enums.Environment.ENT;  
     }
      
     @Test
@@ -37,7 +37,7 @@ public class CompileGroupTestPack{
     public void RunMixTelematicsCreateConfigGroupTestPackChrome() throws FileNotFoundException
     {
         System.out.println("Mix Telematics Test Pack");   
-        instance = new TestMarshall("TestPacks\\CompileConfigTestPack.xlsx", Enums.BrowserType.Chrome);
+        instance = new TestMarshall("TestPacks\\GeneralTestPack.xlsx", Enums.BrowserType.Chrome);
         instance.runKeywordDrivenTests();
     }
     
