@@ -1,5 +1,8 @@
 package KeywordDrivenTestFramework.Testing;
 
+import KeywordDrivenTestFramework.UserAdimn.UserRole;
+import KeywordDrivenTestFramework.Contacts.ImportContact.ContactUs;
+import KeywordDrivenTestFramework.Contacts.ImportContact.ImportContact;
 import KeywordDrivenTestFramework.Core.BaseClass;
 import static KeywordDrivenTestFramework.Core.BaseClass.narrator;
 import KeywordDrivenTestFramework.Entities.Enums;
@@ -7,6 +10,10 @@ import static KeywordDrivenTestFramework.Entities.Enums.Environment.*;
 import KeywordDrivenTestFramework.Entities.TestEntity;
 import KeywordDrivenTestFramework.Entities.TestResult;
 import static KeywordDrivenTestFramework.Core.BaseClass.reportGenerator;
+import KeywordDrivenTestFramework.HistoricalTracking.HistoricalTracking12345;
+import KeywordDrivenTestFramework.LiveTracking.LiveTracking12345;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.AddDriver1;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.AssetsExport12345;
 import KeywordDrivenTestFramework.Reporting.Narrator;
 import KeywordDrivenTestFramework.Reporting.ReportGenerator;
 import KeywordDrivenTestFramework.Reporting.TestReportEmailerUtility;
@@ -36,7 +43,13 @@ import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset4;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset2;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.CreateNewAsset1;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.EventDescription;
 import KeywordDrivenTestFramework.Monitor.FleetAdmin.ExportDiagnosticsInformation;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.ExportDriver12345;
+import KeywordDrivenTestFramework.Monitor.FleetAdmin.ImportAsset12345;
+import KeywordDrivenTestFramework.Templates.LocationTemplate;
+import KeywordDrivenTestFramework.UserAdimn.AddUserAdmin;
+import KeywordDrivenTestFramework.UserAdimn.SecurityGroup;
 
 
 /**
@@ -188,6 +201,71 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
+                             case "ImportContact":
+                            {
+                                ImportContact MXTEL = new ImportContact (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                            
+                             case "EventDescription":
+                            {
+                                EventDescription MXTEL = new EventDescription (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                              case "UserRole":
+                            {
+                                UserRole MXTEL = new UserRole(testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                              case "SecurityGroup":
+                            {
+                                SecurityGroup MXTEL = new SecurityGroup(testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                                case "AddUserAdmin":
+                            {
+                                AddUserAdmin MXTEL = new AddUserAdmin (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                              case "HistoricalTracking12345":
+                            {
+                                HistoricalTracking12345 MXTEL = new HistoricalTracking12345 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                               case "LocationTemplate":
+                            {
+                                LocationTemplate MXTEL = new LocationTemplate (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                               case "ContactUs":
+                            {
+                                ensureNewBrowserInstance();
+                                ContactUs MXTEL = new ContactUs (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
                             case "CreateNewAsset3":
                             {
                                 CreateNewAsset3 MXTEL = new CreateNewAsset3 (testData);
@@ -209,6 +287,40 @@ public class TestMarshall extends BaseClass
                                 numberOfTest++;
                                 break;
                             }
+                             case "AssetsExport12345":
+                            {
+                                AssetsExport12345 MXTEL = new AssetsExport12345 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                             case "ImportAsset12345":
+                            {
+                                ImportAsset12345 MXTEL = new ImportAsset12345 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                             case "LiveTracking12345":
+                            {
+                                LiveTracking12345 MXTEL = new LiveTracking12345 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                            
+                            
+                              case "ExportDriver12345":
+                            {
+                                ExportDriver12345 MXTEL = new ExportDriver12345 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
                             case "CreateNewAsset4":
                             {
                                 CreateNewAsset4 MXTEL = new CreateNewAsset4 (testData);
@@ -228,6 +340,15 @@ public class TestMarshall extends BaseClass
                             {
                          
                                 CreateNewAsset1 MXTEL = new CreateNewAsset1 (testData);
+                                reportGenerator.addResult(MXTEL.executeTest());
+                                numberOfTest++;
+                                break;
+                            }
+                            
+                                 case "AddDriver1":
+                            {
+                         
+                                AddDriver1 MXTEL = new AddDriver1 (testData);
                                 reportGenerator.addResult(MXTEL.executeTest());
                                 numberOfTest++;
                                 break;
