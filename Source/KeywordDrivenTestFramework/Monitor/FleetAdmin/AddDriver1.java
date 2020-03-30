@@ -66,7 +66,6 @@ public class AddDriver1 extends BaseClass{
              pause(3000);
              
         
-             
              if(!DownloadFile()) {
             
             SeleniumDriverInstance.takeScreenShot(counter + " - Failed to click on save button", true);
@@ -76,7 +75,7 @@ public class AddDriver1 extends BaseClass{
         }
              pause(3000);
              
-                 if(!ClickSave()) {
+             if(!ClickSave()) {
             
             SeleniumDriverInstance.takeScreenShot(counter + " - Failed to click on save button", true);
             counter++;
@@ -96,7 +95,7 @@ public class AddDriver1 extends BaseClass{
           return new TestResult (testData, Enums.ResultStatus.PASS, "Successfully added my first asset", this.getTotalExecutionTime());
   }   
         
-public boolean ClickMonitor(){
+        public boolean ClickMonitor(){
       
         if(!SeleniumDriverInstance.clickElementByXpath("(//A[@href='#'])[1]")) {
             errorMsg = "failed to click on monitor tab";
@@ -106,8 +105,8 @@ public boolean ClickMonitor(){
             counter++;
                   
             return true;
-    }
-public boolean AddDriver(){
+        }
+        public boolean AddDriver(){
       
         if(!SeleniumDriverInstance.clickElementByXpath("(//a[@class='ng-binding'])[7]")) {
             errorMsg = "failed to click on monitor tab";
@@ -136,7 +135,7 @@ public boolean AddDriver(){
        public boolean AddDetails(){
          
         
-            if(!SeleniumDriverInstance.enterTextByXpath("//input[@name='driverName']", "Anelisiwe Cetywayo")) {
+          if(!SeleniumDriverInstance.enterTextByXpath("//input[@name='driverName']", "Anelisiwe Cetywayo")) {
             errorMsg = "failed to enter the description";
             return false;
         }
@@ -216,9 +215,6 @@ public boolean AddDriver(){
     }
     
 
-       
-       
-       
          public boolean ClickSave(){
          
         

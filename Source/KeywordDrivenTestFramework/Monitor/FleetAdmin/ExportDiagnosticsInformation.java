@@ -158,33 +158,12 @@ public class ExportDiagnosticsInformation extends BaseClass{
         
         testData.extractParameter("Extracted Data", getNewFile.getAbsolutePath().substring(30) + " ", "Pass");
         testData.extractParameter("Extracted File Size", getFileSize, "PASS");
-        /*
-        String dirName = "C:\\Users\\MsimeleloG\\Downloads";
-        File dir = new File(dirName);
-        File[] fileName = dir.listFiles();
-        
-        
-        System.out.println(fileName[0].getName());
-        
-        if(fileName[0].exists()) {
-            
-            double bytes = fileName[0].length();
-            System.out.println("bytes : " + bytes);
-			
-        }
-        else {
-            
-            System.out.println("File does not exist");
-        }
-        
-        */
+     
         SeleniumDriverInstance.takeScreenShot(counter + "- Clicked export button successfully - ", false);
         counter++;
-        return true;
+        return false;
+  
     }
     
-    
-    
-    
-    
+     
 }

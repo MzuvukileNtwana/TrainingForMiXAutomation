@@ -23,7 +23,7 @@ public class ExportDiagnosticsInformationTestPack {
     {
         ApplicationConfig appConfig = new ApplicationConfig();
         
-        instance.currentEnvironment = Enums.Environment.INT;  
+        instance.currentEnvironment = Enums.Environment.US;  
     }
      
     @Test
